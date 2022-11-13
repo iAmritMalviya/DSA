@@ -1,0 +1,35 @@
+function anagram(first, second) {
+    let check = {}
+    for (let char of first) {
+       check[char] = (check[char] || 0) + 1;
+    }   
+    for (let char of second) {
+        if(!check[char])
+            return false;          
+       else
+            check[char] -= 1;     
+   
+    }
+    return true;
+}
+
+anagram("ana", "aan");
+
+function anagram(str1, str2) {
+    if (str1.length !== str2.length) 
+        return false
+    // count the character in string
+let count1 = {}, count2 = {};
+    
+for (let char of str1) 
+   count1[char] = (count1[char] || 0) + 1;
+
+for (let char of str2) 
+   count2[char] = (count2[char] || 0) + 1;
+    
+for (let char in count1) {       
+        if(!(count1[char] == count2[char]))
+            return false }    
+    return true;
+}
+
