@@ -1,0 +1,15 @@
+// subarray with number
+subArray([1, 2, 3, 4, 5, 5, 4, 5], 4);
+
+function subArray(array, n) {
+	let maxSum = 0, temp = 0;
+	for(let i = 0; i < n; i++)
+	    maxSum = maxSum + array[i];
+	temp = maxSum;
+    for(let i = n; i < array.length;i++ )
+	{
+		temp = temp + array[i] - array[i-n];
+		maxSum = Math.max(temp, maxSum);
+	}
+	return maxSum;
+}
