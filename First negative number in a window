@@ -1,0 +1,31 @@
+let A = [-1, -2,4,5,5];
+let N = 5;
+let K = 3;
+
+firstNegetiveNumber(A, N, K);
+
+function firstNegetiveNumber(arr, n,k) 
+{
+    let i, Di=[], neg=[];
+    for ( i = 0; i < k; i++) 
+            if(arr[i] < 0)
+            Di.push(i);
+    
+            for ( i = k; i < n; i++) 
+            {
+                if(Di.length !== 0)
+                    neg.push(arr[Di[0]]);
+                else
+                    neg.push(0);
+                while (Di[0] < (i - k + 1)) 
+                    Di.shift()
+                if(arr[i] < 0)
+                    Di.push[i]      
+            }    
+        if(Di.length !== 0)
+            neg.push(arr[Di[0]]);
+        else
+            neg.push(0)
+    console.log(neg)
+    
+}
