@@ -1,0 +1,35 @@
+
+let A = [1, 2, 1, 3, 4, 2, 3]
+let N = A.length;
+let K = 4;
+
+countDistinctElement(A,N,K);
+
+function countDistinctElement(arr, n,k) {
+	let counter = [], hm;
+	hm = new Map();
+	for (let i = 0; i < k; i++) {
+		if(hm.has(arr[i]))
+			hm.set(arr[i], hm.get(arr[i])+1)
+		else
+			hm.set(arr[i], 1);
+	}
+	counter.push(hm.size);
+	console.log(counter)
+	for (let i = k; i < n; i++) {
+		if (hm.get(arr[i-k]) == 1) // just to check if any another element left in rest of the window 
+    {
+			hm.delete(arr[i-k])
+		}
+		else
+			hm.set((arr[i-k]), hm.get(arr[i-k]) - 1)
+		if (hm.has(arr[i])) {
+			hm.set(arr[i], hm.get(arr[i])+1);
+		}
+		else
+			hm.set(arr[i], 1);
+	counter.push(hm.size)
+	}
+	
+	return (counter)
+}
