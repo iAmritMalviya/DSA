@@ -1,3 +1,5 @@
+https://www.quora.com/Which-is-your-favorite-IDE-editor-for-practising-data-structures-and-algorithms-in-C
+
 It looks like you've provided a comprehensive plan for mastering programming concepts and problem-solving. This roadmap covers a wide range of topics and gradually builds your skills. Here's your plan organized with links to relevant resources:
 
 **Day −∞ to 0:** Get comfortable with programming languages like C and C++, focusing on pointers and objects.
