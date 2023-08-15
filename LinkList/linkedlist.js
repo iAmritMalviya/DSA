@@ -26,6 +26,18 @@ class LinkedList{
         this.length++;
         return this
     }
+    pop(value){
+        let temp = this.head;
+        let pre =  temp;
+        while(temp.next){
+            pre = temp;
+            temp = temp.next
+        }
+        this.tail = pre;
+        this.tail.next = null;
+        this.length--;
+        return this;
+    }
 }
 const list = new LinkedList(5)
 list.push(6)
