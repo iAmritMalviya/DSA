@@ -27,6 +27,7 @@ class LinkedList{
         return this
     }
     pop(value){
+        if(!this.head) return undefined;
         let temp = this.head;
         let pre =  temp;
         while(temp.next){
@@ -36,7 +37,11 @@ class LinkedList{
         this.tail = pre;
         this.tail.next = null;
         this.length--;
-        return this;
+        if(this.leagth === 0){
+        this.head = null;
+        this.tail = null;
+        }
+        return temp;
     }
 }
 const list = new LinkedList(5)
