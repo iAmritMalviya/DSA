@@ -26,7 +26,7 @@ class LinkedList{
         this.length++;
         return this
     }
-    pop(value){
+    pop(){
         if(!this.head) return undefined;
         let temp = this.head;
         let pre =  temp;
@@ -43,6 +43,16 @@ class LinkedList{
         }
         return temp;
     }
+    unshift(value){
+        if(!this.head) {
+            this.head = newNode;
+            this.tail = newNode;}
+        else{
+            newNode.next = this.head;
+            this.head = newNode;
+        }
+        this.length++;
+        return this;
 }
 const list = new LinkedList(5)
 list.push(6)
