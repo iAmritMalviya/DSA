@@ -52,8 +52,18 @@ class LinkedList{
             this.head = newNode;
         }
         this.length++;
-        return this;
-}
+        return this;}
+    shift(){
+        if(!this.head) return undefined;
+        let temp = this.head;
+        this.head = this.head.next;
+        temp.next = null;
+        this.length--        
+        if(this.length == 0){
+        this.tail = null;
+        }
+        return temp;
+    }
 const list = new LinkedList(5)
 list.push(6)
 list.push(7)
