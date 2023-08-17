@@ -64,6 +64,15 @@ class LinkedList{
         }
         return temp;
     }
+    get(index){
+        if(index < 0 || index >= this.length) return undefined;
+        let temp = this.head;
+        for(let i = 0; i <= index; i++){
+            temp = temp.next;
+        }
+        return temp;                        
+    }
+}
 const list = new LinkedList(5)
 list.push(6)
 list.push(7)
