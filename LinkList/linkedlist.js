@@ -80,6 +80,17 @@ class LinkedList{
         }
         return false;
     }
+    insert(index, value){
+    if(index === 0) return this.unshift(value);
+    if(index === this.length) return this.push(value);
+    if(index < 0 || index > this.length) return false;
+    let temp = this.get(index - 1)
+    let newNode = new Node(value)
+    newNode.next = temp.next;
+    temp.next = newNode;
+    this.length++;
+    return true;
+    }
 }
 const list = new LinkedList(5)
 list.push(6)
