@@ -91,6 +91,17 @@ class LinkedList{
     this.length++;
     return true;
     }
+    remove(index){
+    if(index === 0) return this.shift();
+    if(index === this.length-1) return this.pop();
+    if(index < 0 || this.length <= index) return undefined;
+    let temp = this.get(index);
+    let pre = this.get(index-1)
+    pre.next = temp.next;
+    temp.next = null;
+    this.length--
+    return temp
+    }
 }
 const list = new LinkedList(5)
 list.push(6)
