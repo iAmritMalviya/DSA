@@ -20,8 +20,8 @@ class LinkedList{
             this.head = newNode
             this.tail = newNode
         }else{
-            this.tail = newNode;
             this.tail.next = newNode;
+            this.tail = newNode;            
         }
         this.length++;
         return this
