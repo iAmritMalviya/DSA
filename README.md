@@ -17,6 +17,7 @@ It looks like you've provided a comprehensive plan for mastering programming con
 - [Queues](https://www.geeksforgeeks.org/queue-data-structure/) - Types and complexity.
 
 
+
 **Day 11 - 25:** Learn simple algorithms:
 - Sorting: [Insertion sort](https://www.geeksforgeeks.org/insertion-sort/), [Merge sort](https://www.geeksforgeeks.org/merge-sort/), [Quick sort](https://www.geeksforgeeks.org/quick-sort/), [Heap sort](https://www.geeksforgeeks.org/heap-sort/).
 - Searching: [Linear search](https://www.geeksforgeeks.org/linear-search/), [Binary Search](https://www.geeksforgeeks.org/binary-search/) (with variants).
