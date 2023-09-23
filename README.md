@@ -9,6 +9,7 @@ It looks like you've provided a comprehensive plan for mastering programming con
 
 **Day 1:** Understand Algorithmic complexity, both time and space. You can refer to resources like [Big-O Algorithm Complexity Cheat Sheet](https://www.bigocheatsheet.com/).
 
+
 **Day 2 - 10:** Learn simple data structures:
 - [Arrays](https://www.geeksforgeeks.org/array-data-structure/) - Basic operations and complexity.
 - [Linked Lists](https://www.geeksforgeeks.org/data-structures/linked-list/) - Operations and complexity.
